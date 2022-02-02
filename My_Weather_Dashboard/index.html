@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <h1
+          class="col-12 text-center text-white fw-bold fs-2 py-1"
+          style="
+            background-image: linear-gradient(
+              102deg,
+              rgba(23, 185, 109, 0.7) 0%,
+              rgba(13, 58, 32, 0.7) 24%,
+              rgba(82, 129, 123, 0.7) 91%
+            );
+          "
+        >
+          <a href="./" style="text-decoration: none">
+            <img
+              style="width: 5rem"
+              src="https://icons-for-free.com/iconfiles/png/512/fog+foggy+weather+icon-1320196634851598977.png"
+              alt="weather logo"
+            /> </a
+          >Weather Dashboard
+        </h1>
+      </div>
+    </header>
+
+        <!-- Search Container --> 
+    <main class="container-fluid px-4">
+      <div class="row">
+        <div id="box" class="col-lg-2 col-sm-12 h-100 py-3">
+          <div class="fw-bold fs-4">Search for a City:</div>
+          <div class="my-3">
+            <input
+              type="text"
+              class="form-control rounded p-2 fs-5"
+              name="cityName"
+              id="cityName"
+              placeholder="City Name"
+              style="border: none; background: rgba(9, 90, 26, 0.747)"
+            />
+          </div>
+
+          <!-- Search Button  --> 
+          <button type="submit" class="btn btn-primary w-100 fs-5 text-white p-1" id="searchBtn">Search</button>
+          <div class="border border-secondary my-4"></div>
+          <div id="searchHistory"></div>
+        </div>
+
+        <div class="col-lg-10 col-sm-12 h-100">
+          <div class="d-flex flex-column justify-content-around p-3 h-75 fs-5 gap-3">
+            <div class="fw-bold fs-2">
+              <span id="currCity">City Name</span>, <span id="country">Country</span> <span id="currDate">(Date)</span
+              ><img id="wicon" src="" alt="" />
+            </div>
+            <div>Temp: <span id="temp"></span>°F</div>
+            <div>Wind: <span id="wind"></span> MPH</div>
+            <div>Humidity: <span id="humid"></span>%</div>
+            <div>UV Index: <span id="uvIndex"></span></div>
+          </div>
+
+         <!-- 5 Day Forecast --> 
+
+
+          <div class="row pt-3">
+            <h2 class="fs-3 fw-bold p-2 px-4">5-Day Forecast:</h2>
+          </div>
+          <div id="5-days" class="d-flex flex-row gap-2 flex-wrap text-wrap fs-6 text-white">
+            <div class="card d-flex flex-column justify-content-around p-3" style="width: 14rem; height: 14rem">
+              <h3 class="card-title fs-5">Date: <span id="0-day"></span></h3>
+              <img id="0-img" src="" alt="" />
+              <div class="card-subtitle">Temp: <span id="0-temp"></span>°F</div>
+              <div class="card-subtitle">Wind: <span id="0-wind"></span> MPH</div>
+              <div class="card-subtitle">Humidity: <span id="0-humid"></span>%</div>
+            </div>
+
+            <div class="card d-flex flex-column justify-content-around p-3" style="width: 14rem; height: 14rem">
+              <h3 class="card-title fs-5 fs-">Date: <span id="1-day"></span></h3>
+              <img id="1-img" src="" alt="" />
+              <div class="card-subtitle">Temp: <span id="1-temp"></span>°F</div>
+              <div class="card-subtitle">Wind: <span id="1-wind"></span> MPH</div>
+              <div class="card-subtitle">Humidity: <span id="1-humid"></span>%</div>
+            </div>
+
+            <div class="card d-flex flex-column justify-content-around p-3" style="width: 14rem; height: 14rem">
+              <h3 class="card-title fs-5">Date: <span id="2-day"></span></h3>
+              <img id="2-img" src="" alt="" />
+              <div class="card-subtitle">Temp: <span id="2-temp"></span>°F</div>
+              <div class="card-subtitle">Wind: <span id="2-wind"></span> MPH</div>
+              <div class="card-subtitle">Humidity: <span id="2-humid"></span>%</div>
+            </div>
+
+            <div class="card d-flex flex-column justify-content-around p-3" style="width: 14rem; height: 14rem">
+              <h3 class="card-title fs-5">Date: <span id="3-day"></span></h3>
+              <img id="3-img" src="" alt="" />
+              <div class="card-subtitle">Temp: <span id="3-temp"></span>°F</div>
+              <div class="card-subtitle">Wind: <span id="3-wind"></span> MPH</div>
+              <div class="card-subtitle">Humidity: <span id="3-humid"></span>%</div>
+            </div>
+
+            <div class="card d-flex flex-column justify-content-around p-3" style="width: 14rem; height: 14rem">
+              <h3 class="card-title fs-5">Date: <span id="4-day"></span></h3>
+              <img id="4-img" src="" alt="" />
+              <div class="card-subtitle">Temp: <span id="4-temp"></span>°F</div>
+              <div class="card-subtitle">Wind: <span id="4-wind"></span> MPH</div>
+              <div class="card-subtitle">Humidity: <span id="4-humid"></span>%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./assets/js/script.js"></script>
+
+     <!-- Background video -->   
+     <video autoplay muted loop id="myVideo">
+    	<source src="assets/media/winter.mp4" type="video/mp4">
+    </video>
+
+
+  </body>
+</html>
