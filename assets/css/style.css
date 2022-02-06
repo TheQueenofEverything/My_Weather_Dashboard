@@ -1,0 +1,77 @@
+
+body {
+  background-size: cover;
+  color: rgba(7, 77, 44, 0.849) 0%,
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+/* Background Video-->*/
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+  /*width:100%;
+  min-width:100%;*/
+	height: 100%;
+	min-height: 100%;
+	z-index: -10000;
+}
+
+h1 {
+  width: 100%;
+  opacity: 0.7;
+  backdrop-filter: blur(20px);
+  background-color: #0d630d;
+  font-size: xx-large;
+  color: #f5f7f5;
+
+}
+.col-lg-2 {
+  background-color: rgba(167, 248, 193, 0.5);
+  border-radius: 15px;
+  scrollbar-width: thin;
+  backdrop-filter: blur(20px);
+  margin-bottom: 0.5rem;
+  color: #f5f7f5;
+  font-weight: bold;
+}
+.h-75 {
+  background-color: rgba(169, 218, 152, 0.692);
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  color: white;
+}
+.card {
+  background-color: rgba(154, 231, 186, 0.514);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+}
+input {
+  opacity: 0.8;
+}
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+  display: none;
+  color: #f5f7f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #f5f7f5;
+  width: 15px;
+  color: #f5f7f5;
+}
+#searchBtn {
+  opacity: 0.8;
+  font-weight: bolder;
+  box-shadow: cornsilk;
+  color:#f5f7f5;
+  text-shadow: rgb(104, 204, 174);
+  background-color: rgb(7, 44, 7);
+}
+#searchHistory {
+  overflow: scroll;
+  height: 11rem;
+  color: #f5f7f5;
+
+}
