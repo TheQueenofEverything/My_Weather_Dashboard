@@ -1,5 +1,9 @@
 My Weather Dashboard
 
+Application URL: file:///Users/mariana/Downloads/My_Weather_Dashboard/index.html
+
+Repository URL: 
+
 Description:
   - Weather dashboard application that allows the user to search for any city and obtain its current weather information, such as weather description, temperature, humidity, wind speed and UV index. 
 
