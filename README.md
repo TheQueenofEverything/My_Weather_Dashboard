@@ -3,6 +3,8 @@
 My Weather Dashboard
 
 Application URL:
+
+- https://thequeenofeverything.github.io/My_Weather_Dashboard/index.html
   
 
 Repository URL: 
@@ -50,4 +52,5 @@ References:
 
 
 Screenshot:
-<img width="1305" alt="Screenshot" src="https://user-images.githubusercontent.com/65464431/152699366-477f956c-415a-4e78-b0ac-6047a7c59171.png">
+<img width="1279" alt="Screenshot" src="https://user-images.githubusercontent.com/65464431/152704171-33168b11-5a0a-4fa4-9d06-825c4ce4f159.png">
+
