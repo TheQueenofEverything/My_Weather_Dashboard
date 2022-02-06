@@ -3,7 +3,7 @@
 My Weather Dashboard
 
 Application URL:
-  - file:///Users/mariana/Downloads/My_Weather_Dashboard/index.html
+  
 
 Repository URL: 
   - https://github.com/TheQueenofEverything/My_Weather_Dashboard/tree/main/My_Weather_Dashboard
