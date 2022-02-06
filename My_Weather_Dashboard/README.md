@@ -41,3 +41,13 @@ References:
 - Windy Map: https://www.windy.com/
 - Website Grader: https://website.grader.com/
 - Markup Validation Service: https://validator.w3.org/
+
+
+
+
+Screenshot:
+<img width="1305" alt="Screenshot" src="https://user-images.githubusercontent.com/65464431/152699366-477f956c-415a-4e78-b0ac-6047a7c59171.png">
+
+
+
+
