@@ -4,7 +4,7 @@ My Weather Dashboard
 
 Application URL:
 
-- https://thequeenofeverything.github.io/My_Weather_Dashboard/index.html
+- https://mmvrstudio.github.io/My_Weather_Dashboard/
   
 
 Repository URL: 
@@ -16,9 +16,6 @@ Description:
 
 Programming Languages/ Software/ API’s/ Tools used: 
   - HTML, CSS, JavaScript, Bootstrap, jQuery, Moment.js, OpenWeather API, and Windy MAP API.
-
-Challenges:
-   - Develop a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS and retrieve weather data for cities the OpemWeathe API was used [OpenWeather API](https://openweathermap.org/api).
 
 Main elements:
   - Cities search functionality.
